@@ -1,6 +1,8 @@
 var express = require('express')
 var app = express()
 
-var server = app.listen(5000, function () {
+app.use(express.static(__dirname + '/public'));
+
+var server = app.listen(process.env.PORT || 5000, function () {
   console.log('Server running at http://0.0.0.0:' + server.address().port)
 })
