@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "Example of using webpack with an angular project for an egghead.io lesson",
   "main": "app/index.js",
-  "repository": "https://github.com/kentcdodds/webpack-angular.git",
+  "repository": "https://github.com/sethbergman/es6-angular-webpack.git",
   "scripts": {
     "test": "NODE_ENV=test karma start",
     "start": "node server.js",
-    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html public/index.html",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html public/index.html"
   },
   "keywords": [
     "webpack",
@@ -21,6 +19,7 @@
     "angular": "1.5.7",
     "angular-animate": "1.5.7",
     "angular-aria": "1.5.7",
+    "angular-component": "0.0.3",
     "angular-formly": "^4.0.8",
     "angular-material": "^1.0.1",
     "angular-messages": "^1.5.0-rc.0",
@@ -33,8 +32,11 @@
     "babel-preset-stage-2": "^6.5.0",
     "browser-sync": "^2.18.5",
     "css-loader": "^0.9.1",
-    "file-loader": "^0.8.1",
+    "file-loader": "^0.8.5",
+    "fs-walk": "0.0.1",
     "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^3.0.0",
     "http-server": "^0.9.0",
     "jshint": "^2.6.3",
     "jshint-loader": "^0.8.3",
@@ -43,9 +45,11 @@
     "karma-chrome-launcher": "^0.1.7",
     "karma-mocha": "0.1.10",
     "karma-webpack": "^1.5.0",
+    "lodash": "^3.8.0",
     "ng-annotate-loader": "^0.1.0",
     "nib": "^1.1.0",
     "raw-loader": "^0.5.1",
+    "run-sequence": "^1.1.0",
     "snyk": "1.16.0",
     "style-loader": "^0.8.3",
     "stylus": "0.54.3",
@@ -55,6 +59,5 @@
     "webpack-core": "^0.5.0",
     "webpack-dev-server": "^1.7.0",
     "webpack-stream": "^3.2.0"
-  },
-  "snyk": true
+  }
 }

@@ -1,12 +1,10 @@
-'use strict';
-
 import gulp from 'gulp';
 import path from 'path';
 import webpack from 'webpack-stream';
-const browserSync = require('browser-sync').create();
+let browserSync = require('browser-sync');
 
-const reload = () => browserSync.reload();
-const root = 'public';
+let reload = () => browserSync.reload();
+let root = 'public';
 
 // helper method for resolving paths
 const resolveToApp = (glob) => {
@@ -23,7 +21,7 @@ const paths = {
     path.join(root, 'index.html')
   ],
   entry: path.join(root, 'app/app.js'),
-  //output: root
+  output: root
 };
 
 gulp.task('webpack', () => {
@@ -37,12 +35,12 @@ gulp.task('reload', ['webpack'], (done) => {
   done();
 });
 
-
 gulp.task('serve', () => {
   browserSync.init({
     port: process.env.PORT || 5000,
-    server: { baseDir: root, domain: '0.0.0.0' }
-  });
+    server: { baseDir: root },
+    domain: '0.0.0.0'
+ });
 });
 
 gulp.task('watch', ['serve'], () => {
