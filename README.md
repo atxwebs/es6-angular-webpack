@@ -15,6 +15,6 @@ There is a convenient Gulp task called `component` to generate components. To do
 
 The parameter following the `--name` flag is the name of the component to be created. Ensure that it is unique or it will overwrite the preexisting identically-named component.
 
-The component will be created, by default, inside `client/app/components`. To change this, apply the `--parent` flag, followed by a path relative to `client/app/components/`.
+The component will be created, by default, inside `app/components`. To change this, apply the `--parent` flag, followed by a path relative to `app/components/`.
 
 Because the argument to `--name` applies to the folder name **and** the actual component name, make sure to [camelCase](https://www.quora.com/What-is-the-difference-between-Pascal-Case-and-Camel-Case) the component names.
