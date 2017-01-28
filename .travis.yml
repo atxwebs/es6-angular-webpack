@@ -1,6 +1,21 @@
+sudo: false
 language: node_js
 node_js:
-  - "7.4.0"
+  - "7"
+  - "6"
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+      - libgnome-keyring-dev
+script:
+  - "npm test"
+  - "npm run test-ci"
+after_script: "npm install coveralls && npm run coverage"
 
 before_script:
   - npm install -g gulp
