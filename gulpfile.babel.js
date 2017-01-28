@@ -39,7 +39,8 @@ gulp.task('serve', () => {
   browserSync.init({
     port: process.env.PORT || 5000,
     server: { baseDir: root },
-    domain: '0.0.0.0'
+    domain: '0.0.0.0',
+    open: false
  });
 });
 
