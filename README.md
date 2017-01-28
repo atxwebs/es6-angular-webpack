@@ -1,4 +1,6 @@
 # An Angular 1.x and ES6 bookmark manager
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/es6-angular-webpack.svg)](https://greenkeeper.io/)
 This is a simple bookmark manager built with AngularJS, ES6 and Webpack.
 ## Getting Started
 You will need [node.js](https://nodejs.org/en/) and npm (which ships with node).
