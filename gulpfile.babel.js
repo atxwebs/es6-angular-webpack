@@ -1,10 +1,10 @@
 import gulp from 'gulp';
 import path from 'path';
 import webpack from 'webpack-stream';
-let browserSync = require('browser-sync');
+const browserSync = require('browser-sync');
 
-let reload = () => browserSync.reload();
-let root = 'public';
+const reload = () => browserSync.reload();
+const root = 'app';
 
 // helper method for resolving paths
 const resolveToApp = (glob) => {
@@ -35,8 +35,8 @@ gulp.task('reload', ['webpack'], (done) => {
   done();
 });
 
-gulp.task('serve', () => {
-  browserSync.init({
+gulp.task('serve', ['webpack'], () => {
+  browserSync({
     port: process.env.PORT || 5000,
     server: { baseDir: root },
     domain: '0.0.0.0',
