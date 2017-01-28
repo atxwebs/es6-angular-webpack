@@ -1,22 +1,22 @@
-sudo: false
 language: node_js
 node_js:
-  - "7"
-  - "6"
-env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-      - libgnome-keyring-dev
+  - "node"
+  - "iojs"
+  - "6.0"
+  - "5.0"
+  - "4.2"
+  - "0.12"
+  - "0.10"
+sudo: false
 script:
-  - "npm test"
-  - "npm run test-ci"
-after_script: "npm install coveralls && npm run coverage"
+  - "npm install coveralls"
+after_script: "make test-coveralls"
 
-before_script:
-  - npm install -g gulp
-script: gulp
+script:
+  - "npm install -g gulp mocha"
+after_script: "gulp"
+
+notifications:
+  slack: stackriot:gLki5FxZeKzaSziW26HP0DJm
+
+before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi

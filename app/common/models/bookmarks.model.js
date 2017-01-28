@@ -1,6 +1,6 @@
 import {uniqueId, findIndex, remove} from 'lodash';
 
-class BookmarksModel {
+export class BookmarksModel {
   constructor($q) {
     'ngInject';
 

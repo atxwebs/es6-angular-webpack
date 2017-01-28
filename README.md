@@ -4,6 +4,10 @@
 
 [![Build Status](https://travis-ci.org/sethbergman/angular2-webpack-starter.svg?branch=master)](https://travis-ci.org/sethbergman/angular2-webpack-starter)
 
+[![Coverage Badge](https://api.shippable.com/projects/588c639b9f1c9b0f007c9a1d/coverageBadge?branch=master)](https://app.shippable.com/projects/588c639b9f1c9b0f007c9a1d)
+
+[![Run Status](https://api.shippable.com/projects/588c639b9f1c9b0f007c9a1d/badge?branch=master)](https://app.shippable.com/projects/588c639b9f1c9b0f007c9a1d)
+
 This is a simple bookmark manager built with AngularJS, ES6 and Webpack.
 ## Getting Started
 You will need [node.js](https://nodejs.org/en/) and npm (which ships with node).
