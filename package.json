@@ -59,7 +59,7 @@
     "log-driver": "1.2.5",
     "minimist": "1.2.0",
     "mocha": "^2.5.3",
-    "mocha-lcov-reporter": "1.2.0",
+    "mocha-lcov-reporter": "1.3.0",
     "ng-annotate-loader": "^0.2.0",
     "nib": "^1.1.0",
     "raw-loader": "^0.5.1",
