@@ -38,7 +38,7 @@
     "babel-preset-stage-2": "^6.5.0",
     "browser-sync": "^2.18.5",
     "chai": "^3.5.0",
-    "css-loader": "^0.27.1",
+    "css-loader": "^0.28.2",
     "file-loader": "^0.10.0",
     "fs-walk": "0.0.1",
     "gulp": "^3.9.1",
