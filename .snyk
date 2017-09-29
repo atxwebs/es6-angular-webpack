@@ -1,5 +1,7 @@
-version: v1.5.0
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
     - jshint > minimatch:
@@ -7,3 +9,54 @@ patch:
   'npm:ws:20160104':
     - karma > socket.io > socket.io-client > ws:
         patched: '2016-07-01T06:39:03.074Z'
+  'npm:debug:20170905':
+    - browser-sync > socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - mocha > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > connect > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > connect > finalhandler > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > serve-index > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io > engine.io > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io > socket.io-adapter > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > socket.io-adapter > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io-client > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io > socket.io-client > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io-client > engine.io-client > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > localtunnel > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > engine.io > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > socket.io-client > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > serve-static > send > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io > socket.io-parser > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io-client > socket.io-parser > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > socket.io-parser > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - browser-sync > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2017-09-29T23:07:20.201Z'
+    - karma > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2017-09-29T23:07:20.201Z'
