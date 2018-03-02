@@ -76,6 +76,6 @@
     "webpack": "^2.2.1",
     "webpack-core": "^0.6.9",
     "webpack-dev-server": "^2.3.0",
-    "webpack-stream": "^3.2.0"
+    "webpack-stream": "^4.0.0"
   }
 }
