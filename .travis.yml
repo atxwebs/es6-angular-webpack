@@ -1,13 +1,9 @@
 language: node_js
 node_js:
-  - "node"
-  - "iojs"
-  - "6.0"
-  - "5.0"
-  - "4.2"
-  - "0.12"
-  - "0.10"
-sudo: false
+  - "9"
+  - "8"
+  - "6"
+  
 script:
   - "npm install coveralls"
 after_script: "make test-coveralls"
@@ -15,8 +11,3 @@ after_script: "make test-coveralls"
 script:
   - "npm install -g gulp mocha"
 after_script: "gulp"
-
-notifications:
-  slack: stackriot:gLki5FxZeKzaSziW26HP0DJm
-
-before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
