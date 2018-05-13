@@ -6,8 +6,9 @@
   "repository": "https://github.com/sethbergman/es6-angular-webpack.git",
   "scripts": {
     "test": "NODE_ENV=test karma start",
-    "start": "gulp",
-    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html public/index.html"
+    "dev": "gulp",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html public/index.html",
+    "start": "npm run dev && npm run build"
   },
   "bin": {
     "coveralls": "./bin/coveralls.js"
@@ -36,7 +37,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
-    "browser-sync": "^2.18.5",
+    "browser-sync": "^2.23.5",
     "chai": "^4.1.2",
     "css-loader": "^0.28.9",
     "file-loader": "^1.1.6",
