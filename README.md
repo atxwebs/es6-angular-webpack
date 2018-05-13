@@ -1,25 +1,33 @@
-# An Angular 1.x and ES6 bookmark manager
+# An Angular 1.x and ES6 bookmark manager with Webpack
+---
+_This is a simple bookmark manager built with AngularJS, ES6 and Webpack._
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/es6-angular-webpack.svg)](https://greenkeeper.io/)
 
-[![Build Status](https://travis-ci.org/sethbergman/angular2-webpack-starter.svg?branch=master)](https://travis-ci.org/sethbergman/angular2-webpack-starter)
+[![Build Status](https://travis-ci.org/sethbergman/es6-angular-webpack.svg?branch=master)](https://travis-ci.org/sethbergman/es6-angular-webpack)
 
-[![Coverage Badge](https://api.shippable.com/projects/588c639b9f1c9b0f007c9a1d/coverageBadge?branch=master)](https://app.shippable.com/projects/588c639b9f1c9b0f007c9a1d)
-
-[![Run Status](https://api.shippable.com/projects/588c639b9f1c9b0f007c9a1d/badge?branch=master)](https://app.shippable.com/projects/588c639b9f1c9b0f007c9a1d)
-
-This is a simple bookmark manager built with AngularJS, ES6 and Webpack.
 ## Getting Started
-You will need [node.js](https://nodejs.org/en/) and npm (which ships with node).
 
-## Installing
+### Clone
 ```sh
 git clone https://github.com/sethbergman/es6-angular-webpack.git && cd es6-angular-webpack
-npm i
-npm start
 ```
 
-## @TODO - Generating Components
+### Install Dependencies
+```sh
+npm i
+# or use yarn
+yarn
+```
+### Start the App
+```sh
+npm start
+```
+The app will start locally at [0.0.0.0:5000](http://0.0.0.0:5000).
+
+---
+
+#### @TODO - Generating Components
 There is a convenient Gulp task called `component` to generate components. To do so, simply run `gulp component --name componentName`.
 
 The parameter following the `--name` flag is the name of the component to be created. Ensure that it is unique or it will overwrite the preexisting identically-named component.
