@@ -63,7 +63,7 @@
     "ng-annotate-loader": "^0.6.1",
     "nib": "^1.1.0",
     "raw-loader": "^0.5.1",
-    "request": "2.83.0",
+    "request": "2.86.0",
     "run-sequence": "^2.2.1",
     "should": "13.2.1",
     "sinon-restore": "1.0.1",
